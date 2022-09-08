@@ -14,8 +14,8 @@ window.onscroll = () =>{
 }
 
 document.getElementById("home-btn").onclick = function () {
-    location.href = "";
+    location.href = "https://apps.apple.com/app/cookie-editor-by-clint/id1643498176";
 };
 document.getElementById("all-btn").onclick = function () {
-    location.href = "";
+    location.href = "https://apps.apple.com/app/cookie-editor-by-clint/id1643498176";
 };
