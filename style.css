@@ -4,6 +4,7 @@
   --color-primary: #050505;
   --color-secondary: #000000;
   --color-extra: #d4e9e2;
+  --color-more: #FFF;
 }
 
 * {
@@ -14,7 +15,7 @@
 
 html,
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Robot', sans-serif;
   line-height: 1.4;
   color: #000;
 }
@@ -223,6 +224,10 @@ section a {
   background-color: var(--color-extra);
   color: #000;
 }
+.bg-more {
+  background-color: var(--color-more);
+  color: #fff;
+}
 .bg-dark {
   background-color: var(--color-dark);
   color: #000;
@@ -263,6 +268,9 @@ section a {
 }
 .py-md {
   padding: 20px 0;
+}
+.py-md-x {
+  padding: 0px 0;
 }
 .py-lg {
   padding: 40px 0;
@@ -422,4 +430,9 @@ section a {
     max-width: 90%;
   }
 }
-
+/* Extra */
+.imagepvc{
+  margin-left: 40px;
+  width: 500px ;
+  height: 450px ;
+}
