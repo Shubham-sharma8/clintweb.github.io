@@ -1,171 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Clint - A Vision to change Visionaries</title>
+    <link rel="icon" type="image/x-icon" href="source/Logo_Black.png">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clint - A cookie Editor for safari </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-
-<body>
-    <!-- navbar sections starts  -->
-    <header class="header">
-        <div class="logo">
-            <img src="Logo.png" height="100" width="100" alt="logo-bookmark">
+  </head>
+  <body>
+    
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="source/Logo_Black.png" alt="Starbucks" />
+          </a>
         </div>
 
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#features pri">Features</a>
-            <a href="#download">Download</a>
-            <a href="#footer">About us</a>
-            <a href="privacy.html">Privacy</a>
-            <a href="#" class="btn" >Get It?</a>
-        </nav>
+        <ul class="navbar-nav-left">
+          <li>
+            <a href="#" onclick="window.location.reload(true);">Home</a>
+          </li>
+          <li>
+            <a href="https://apps.apple.com/app/cookie-editor-by-clint/id1643498176">Download Cookie EDitor </a>
+          </li>
+          <li>
+            <a href="undercons.html">About</a>
+          </li>
+          <li>
+            <a href="undercons.html">Contact</a>
+          </li>
+        </ul>
 
+        <ul class="navbar-nav-right">
+          <li>
+            <a href="https://goo.gl/maps/hzCpKw8nUf8xQkSB6">
+              <img src="img/marker.svg" alt="" />
+              <span>Locate US</span>
+            </a>
+          </li>
+          <li><a href="undercons.html"><button class="btn btn-dark-outline" id="signin">Sign in</button> </a></li>
+          <li><button class="btn btn-dark">Join now</button></li>
+        </ul>
 
-        <div class="fas fa-bars" id="menu-btn"></div>
-    </header>
-    <!-- navbar sections starts  -->
+        <!-- Hamburger Menu -->
+        <button type="button" class="hamburger" id="menu-btn">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+    </nav>
 
-   
-    <!-- home section stars  -->
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="menu">
+      <ul>
+        <li>
+          <a href="#" onclick="window.location.reload(true);">Home</a>
+        </li>
+        <li>
+          <a href="https://apps.apple.com/app/cookie-editor-by-clint/id1643498176">Download Cookie Editor </a>
+        </li>
+        <li>
+          <a href="undercons.html">About</a>
+        </li>
+        <li>
+          <a href="undercons.html">Contact</a>
+        </li>
+      </ul>
 
-    <section class="home" id="home">
-        <div class="content">
-            <h1>Current vision to edit cookies</h1>
-            <p>We Currently working on our new app for IOS.<br> Cookie Editor- By Clint <br> A powerfull tool to edit, change , manage all the cookies manually.</p>
-
-            
-            <button id="home-btn" class="home-btn" >Get us on APPSTORE</button>
+      <div class="mobile-menu-bottom">
+        <button class="btn btn-dark-outline">Sign in</button>
+        <button class="btn btn-dark">Join now</button>
+        <div>
+          <a href="https://goo.gl/maps/hzCpKw8nUf8xQkSB6">
+            <img src="img/marker.svg" alt="" />
+            <span>Locate US</span>
+          </a>
         </div>
+      </div>
+    </div>
+    
 
-
-        <div class="image">
-            <img src="pig.gif" alt="illustration-hero">
-        </div>
+    <!-- Box A -->
+    <section class="box box-a bg-primary text-center py-md">
+      <div class="box-inner">
+        <img src="source/Logo_White.png" width="50">
+        <h2 class="text-xl"> APP CLINT </h2>
+        <p class="text-md">
+          Our vision is to change Visionaries <br>
+          <a href="undercons.html">Learn more</a>
+        </p>
+      </div>
     </section>
-
-    <!-- home section ends -->
-
-    <!-- features sectin starts  -->
-
-    <section class="features" id="features">
-        <div class="heading">
-            <h1>Features</h1>
-            <p>This Cookie Editor is similar as we used in our other devices 
-                and browsers such as chrome, Firefox etc. And have same functions </p>
-        </div>
-
-
-        <div class="row">
-            <!-- 1 Tab  -->
-            <div class="image">
-                <img src="add.jpeg" alt="illustration-features-tab-1">
-            </div>
-
-
-            <div class="content">
-                <h1>Add Cookie</h1>
-                <p>You can add cookies as per your requiremts by adding NAME and value etc.</p>
-                
-            </div>
-
-            <!-- 1 Tab  -->
-
-            <!-- 2 Tab  -->
-            <div class="content">
-                <h1>Remove all cookies</h1>
-                <p>Our powerful tool can remove all the saved cookies in one click from saved sites (Even logins) permanently</p>
-                
-            </div>
-
-            <div class="image">
-                <img src="remove.jpeg" alt="illustration-features-tab-2">
-            </div>
-
-            <!-- 2 Tab  -->
-
-            <div class="image">
-                <img src="import.jpeg" alt="illustration-features-tab-3">
-            </div>
-
-            <div class="content">
-                <h1>Import Cookies</h1>
-                <p>Easily import all the cookie saved by browser and import as .JSON file or simply pasting text.</p>
-                
-            </div>
-
-
-            <!-- 3 Tab  -->
-
-        </div>
-    </section>
-
-
-    <!-- features sectin ends -->
-
-
-    <!-- downloads section starts  -->
-
-    <section class="download" id="download">
-        <div class="heading">
-            <h1>Download our Extension</h1>
-            <p>it will redirect to APPLE App Store </p>
-        </div>
-
+    
         
+    
 
-       
-            <div class="box">
-                <img src="Safari.png" width="100" alt="logo-opera">
-
-                <h3>Add to SAFARI</h3>
-                <p>Minimum Version 15</p>
-                <button id="all-btn" class="all-btn" >install</button>
-            </div>
-        </div>
+    <!-- Box B -->
+    <section class="box box-b bg-secondary grid-col-2">
+      <img src="source/code.png" alt="" />
+      <div class="box-text">
+        <h2 class="text-xl">Cookie Editor </h2>
+        <p class="text-md">
+          This very first iOS, iPad OS app leads to edit cookies in Safari for the very first time .
+        </p>
+        <a href="undercons.html" class="btn btn-light-outline">Know More </a>
+      </div>
     </section>
 
+    <!-- Box C -->
+    <section class="box box-c bg-secondary grid-col-2 grid-reversed">
+      <img src="source/coding.png" alt="" />
+      <div class="box-text">
+        <h2 class="text-xl">Build using Code</h2>
+        <p class="text-md">
+          We here build not only Apps but even more .
+        </p>
+        <a href="undercons.html" class="btn btn-light-outline">Know More</a>
+      </div>
+    </section>
 
-    <!-- downloads section ends -->
+    <!-- Box D -->
+    <section class="box box-d bg-primary grid-col-2">
+      <img src="source/privacy.png" alt="" />
+      <div class="box-text">
+        <h2 class="text-xl">Privacy Matters!</h2>
+        <p class="text-md">
+          For us User's Privacy matter a lot. <br> take care that we don't collect any data from you. 
+        </p>
+        <a href="privacy.html" class="btn btn-light-outline">know More about our Privacy</a>
+      </div>
+    </section>
+    
+    <!-- Box B -->
+    <section class="box box-a bg-primary text-center py-md">
+      <a href="https://apps.apple.com/app/cookie-editor-by-clint/id1643498176">
+        <img src="source/Smart.gif" alt="Know more">
+      </a>
+    </section>
 
+    <!-- Box E -->
+    <section class="box box-e bg-secondary grid-col-2 grid-reversed">
+      <img src="source/me.png" alt="" />
+      <div class="box-text">
+        <h2 class="text-md">Founder!!!</h2>
+        <p class="text-sm">
+          Shubham Sharma! A student who learn more and more and have potential to drive this to a lead
+        </p>
+        <a href="undercons.html" class="btn btn-light-outline">About Me?</a>
+      </div>
+    </section>
+    
 
+    <!-- Box F -->
+    <section class="box box-f grid-col-2">
+      <div>
+        <img src="source/next.png" alt="" />
+        <div class="bg-extra py-lg">
+          <div class="box-text">
+            <h2 class="text-md">More Project</h2>
+            <p class="text-sm">
+              We are currently working on more projects to make some changes.
+            </p>
+            <a href="undercons.html" class="btn btn-dark-outline">What next?</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="source/notonly.png" alt="" />
+        <div class="bg-primary py-lg">
+          <div class="box-text">
+            <h2 class="text-md">We not only code!</h2>
+            <p class="text-sm">
+              We here in CLINT not only code. We build a better future. We also work on
+            </p>
+            <a href="undercons.html" class="btn btn-light-outline">Build Drone</a>
+            <a href="undercons.html" class="btn btn-light-outline">Video Editing</a>
+            <a href="undercons.html" class="btn btn-light-outline">UI/UX Designing</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- footer section starts  -->
+    <section class="box box-e bg-secondary grid-col-2 grid-reversed">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.9447883799635!2d77.5245504146836!3d28.420922782501812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc0f918abee8d%3A0x8c72169fdd7154b0!2sGautam%20Buddha%20University!5e0!3m2!1sen!2sin!4v1663324783531!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="box-text">
+        <h2 class="text-md">Where are we</h2>
+        <p class="text-sm">
+          We are at <br> Gautam Buddha University - Greate Noida 201310
+        </p>
+        <a href="https://goo.gl/maps/hzCpKw8nUf8xQkSB6" class="btn btn-light-outline">Navigate?</a>
+      </div>
+    </section>
+    <!-- Box last -->
+    <section class="box box-a bg-primary text-center py-md">
+      <a href="undercons.html">
+        <img src="source/box1.png" alt="Know more">
+      </a>
+    </section>
 
-   <section class="footer" id="footer">
-       <div class="box-container">
-           <div class="box">
-               <h3>quick links</h3>
-               <a href="#"><i class="fas fa-chevron-right"></i>home</a>
-               <a href="#"><i class="fas fa-chevron-right"></i>features</a>
-               <a href="#"><i class="fas fa-chevron-right"></i>download</a>
-               <a href="#"><i class="fas fa-chevron-right"></i>contact</a>
-            </div>
-            
-            
-            
+    <div class="divider"></div>
 
-           <div class="box">
-               <h3>contact info</h3>
-               <a href="#"><i class="fas fa-envelope"></i>help@appclint.tech</a>
-               <a href="#"><i class="fas fa-map-marker-alt"></i>Shahdhara Delhi ,  110034</a>
-           </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="social">
+          <a href="https://www.linkedin.com/in/shubham-sharma-ee/">
+            <img src="source/linkedin.png" alt="" />
+          </a>
 
-           <div class="box">
-               <h3>follow us</h3>
-               <a href="#"><i class="fab fa-instagram"></i>instagram</a>
-           </div>
-       </div>
+          <a href="https://www.instagram.com/app.clint/?igshid=ZjA0NjI3M2I%3D">
+            <img src="./img/social-instagram.svg" alt="" />
+          </a>
+          <a href="https://twitter.com/shubhamsharmaui">
+            <img src="./img/social-twitter.svg" alt="" />
+          </a>
+        </div>
+        <p>© 2022 App Clint. All rights reserved.</p>
+      </div>
+    </footer>
 
-    <!-- footer section ends -->
-
-
-    <script src="main.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
